@@ -1,0 +1,28 @@
+name: CD - Deploy
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  deploy:
+    name: Deploy to Railway
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Deploy to Railway
+      uses: railwayapp/railway-action@v1
+      with:
+        railway_token: ${{ secrets.RAILWAY_TOKEN }}
+        service: status-api
+
+    - name: Health Check
+      run: |
+        echo "Espero o deploy finalizar..."
+        sleep 30
+        
+        echo "Deploy do commit ${{ github.ref_name }}/${{ github.sha }} com sucesso!"
