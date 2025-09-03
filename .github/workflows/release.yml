@@ -1,0 +1,22 @@
+name: Release Please
+
+on:
+  push:
+    branches: main 
+
+jobs:
+  release-please:
+    name: Create Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+    - name: Create Release
+      uses: googleapis/release-please-action@v4
+      with:
+        release-type: elixir
+        config-file: .github/release-please-config.json
+        manifest-file: .github/.release-please-manifest.json
+        token: ${{ secrets.GITHUB_TOKEN }}
