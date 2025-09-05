@@ -1,0 +1,28 @@
+name: CI
+
+on: 
+  push:  
+    [ main ]
+  pull_request:
+
+  jobs:
+    format:
+      runs-on ubuntu-latest
+
+      steps:
+        -uses: actions/checkout@v4
+
+        -name: configura elixir
+          uses: erlef/setup-beam@v1
+          with:
+            elixir-version: '1.18.4'
+            otp-version: '28.0.2'
+
+        -name: compila
+          run: mix do deps.get, compile
+
+        -name: checa a formatacao
+          run: mix format --check-formatted
+
+        -name: roda os testes
+          run: mix test 
