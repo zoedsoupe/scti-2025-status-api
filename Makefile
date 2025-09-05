@@ -1,6 +1,7 @@
 docker-build:
 	docker build -t status-api .
 
+#4000:4000 é redirecionando a porta do dispositivo para a porta do docker
 docker-run: docker-build
 	docker run -p 4000:4000 status-api
 
