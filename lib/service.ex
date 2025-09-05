@@ -8,7 +8,8 @@ defmodule Service do
   plug :dispatch
 
   @participants [
-    {"Zoey", "zoedsoupe"}
+    {"Zoey", "zoedsoupe"},
+    {"Fred", "Sader"}
   ]
 
   get "/" do
