@@ -9,19 +9,6 @@ defmodule Service do
 
   @participants [
     {"Zoey", "zoedsoupe"}
-
-
-
-
-
-
-
-
-
-
-
-
-
   ]
 
   get "/" do
