@@ -8,7 +8,7 @@ defmodule Service do
   plug :dispatch
 
   @participants [
-    {"Zoey", "zoedsoupe"}
+    {"Zoey", "zoedsoupe"},
     {"José Arthur", "jamm2k"}
   ]
 
