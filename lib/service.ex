@@ -9,7 +9,11 @@ defmodule Service do
 
   @participants [
     {"Zoey", "zoedsoupe"},
-    {"Pablo", "PaBLOHenCh"}
+    {"Pablo", "PaBLOHenCh"},
+    {"José Arthur", "jamm2k"},
+    {"Fred", "Sader"},
+    {"Juan", "juanzeen"},
+    {"Mateus", "mmcferreira"}
   ]
 
   get "/" do
