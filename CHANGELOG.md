@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/zoedsoupe/scti-2025-status-api/compare/v1.1.0...v2.0.0) (2025-09-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Modified by pablo ([#8](https://github.com/zoedsoupe/scti-2025-status-api/issues/8))
+
+### Features
+
+* Modified by pablo ([#8](https://github.com/zoedsoupe/scti-2025-status-api/issues/8)) ([fb6570d](https://github.com/zoedsoupe/scti-2025-status-api/commit/fb6570da056eb189fbcbad7c6293b01702ace0b8))
+
 ## [1.1.0](https://github.com/zoedsoupe/scti-2025-status-api/compare/v1.0.0...v1.1.0) (2025-09-05)
 
 
