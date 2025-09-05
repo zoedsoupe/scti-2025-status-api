@@ -1,4 +1,4 @@
-FROM elixir:1.18-otp-28
+FROM hexpm/elixir:1.18.4-erlang-28.0.2-alpine-3.20.7 AS builder
 
 ARG PORT=4000
 
