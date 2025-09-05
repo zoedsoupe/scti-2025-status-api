@@ -9,6 +9,7 @@ defmodule Service do
 
   @participants [
     {"Zoey", "zoedsoupe"},
+    {"Juan", "juanzeen"},
     {"Mateus", "mmcferreira"}
   ]
 
